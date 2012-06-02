@@ -1,0 +1,43 @@
+﻿@model aspectCloud.Models.Client
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Client</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ClientSinceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClientSinceDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreditLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreditLimit)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
